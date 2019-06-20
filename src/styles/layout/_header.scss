@@ -1,0 +1,17 @@
+// Header Component
+
+.m-header {
+		padding: 3.5em 3em 3em;
+		background: $color-header;
+
+		.m-header__logo {
+				background: url('../assets/revonic-logo.png');
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				height: auto;
+				padding-top: 4em;
+				width: 205px;
+				display: block;
+		}
+
+}

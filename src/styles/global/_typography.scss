@@ -1,0 +1,70 @@
+// Typography
+
+
+body {
+	font-family: $font-body;
+	font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+
+    color: $color-black;
+		font-family: $font-body;
+		font-weight: 700;
+    margin: 0.5em 0;
+}
+
+h1 {
+		font-size: 2.2em;
+		letter-spacing: -1px;
+}
+
+p, li, .p {
+    // font-family: $font-regular;
+    line-height: 1.4em;
+		color: $color-black;
+		font-family: $font-body;
+}
+
+p, .p {
+    margin-bottom: calculateRem(14px);
+}
+
+th, td, tr {
+		color: $color-black;
+		font-family: $font-body;
+}
+
+th, td {
+		font-size: 18px;
+
+		@media (max-width: $screen-md) {
+				font-size: 14px;
+		}
+
+		@media (max-width: $screen-sm) {
+				font-size: 12px;
+		}
+
+}
+
+i {
+    font-style: normal;
+}
+
+a {
+    color: $color-link;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+strong {
+    font-weight: 900;
+}
+
+footer {
+		font-family: $font-footer;
+}

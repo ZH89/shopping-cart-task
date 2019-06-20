@@ -1,0 +1,26 @@
+html, body {
+    box-sizing: border-box;
+    color: $color-text;
+    background: $color-background;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input, button, submit { border:none; }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    -webkit-backface-visibility: hidden;
+}
+
+::-moz-selection {
+    background: $color-black;
+    color: $color-white;
+}
+::selection {
+    background: $color-black;
+    color: $color-white;
+}

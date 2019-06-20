@@ -1,0 +1,17 @@
+// Header Component
+
+.u-bold {
+		font-weight: 900;
+}
+
+.u-float-right {
+		float: right;
+}
+
+.u-gradient-background {
+		background: #fafafa; /* Old browsers */
+		background: -moz-linear-gradient(top,  #fafafa 0%, #dadada 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #fafafa 0%,#dadada 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #fafafa 0%,#dadada 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#dadada',GradientType=0 ); /* IE6-9 */
+}

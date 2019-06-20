@@ -1,0 +1,32 @@
+// Button Component
+
+.m-button {
+
+			font-size: 22px;
+	    background-color: $color-blue;
+	    color: $color-white;
+	    border-radius: 10px;
+			font-family: $font-cta;
+	    font-weight: 900;
+			letter-spacing: -1px;
+	    padding: 0.5em 1.5em;
+	    cursor: pointer;
+			-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.4);
+			-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.4);
+			box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.4);
+
+		&:hover {
+				background: $color-green;
+				color: $color-white;
+		}
+
+		&:active {
+				background: $color-turquoise;
+				color: $color-white;
+		}
+
+		&:focus {
+		    outline: 0;
+		}
+
+}

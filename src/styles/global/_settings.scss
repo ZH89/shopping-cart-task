@@ -1,0 +1,33 @@
+// Settings
+
+
+// Paths
+$path-fonts:  '../fonts/';
+$path-images: '../images/';
+$path-svgs:   '../images/svgs/';
+$path-icons: $path-images + 'icons/';
+
+
+// Colours
+$color-black: #141111;
+$color-white: #fff;
+$color-white-medium: #fafafa;
+$color-grey-light: #dddddd;
+$color-grey-medium: #9b9b9b;
+$color-grey-dark: #666666;
+$color-blue: #000066;
+$color-turquoise: #53bb53;
+$color-red: #da291c;
+$color-green: #006400;
+
+$color-background: $color-white-medium;
+$color-text: $color-grey-light;
+$color-link: $color-blue;
+$color-header: $color-black;
+$color-footer: $color-grey-dark;
+$color-footer-text: $color-white;
+
+
+// Responsive Breakpoints
+$screen-sm: 399px;
+$screen-md: 599px;

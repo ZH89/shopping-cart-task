@@ -1,0 +1,18 @@
+// Footer Component
+
+.m-footer {
+
+		background: $color-footer;
+		color: $color-footer-text;
+		padding: 1.2em;
+		border-top: 1px solid $color-black;
+
+		&__text {
+				font-size: 12px;
+		}
+
+		&__copyright {
+				font-weight: 900;
+		}
+
+}

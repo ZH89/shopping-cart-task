@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Revonic | Task</title>
+   </head>
+   <body>
+      <header class="m-header">
+          <a href="https://www.revonic.com/" target="_blank" class="m-header__logo">
+          </a>
+      </header>
+      <div class="wrapper u-gradient-background">
+          <div class="container">
+              <form method="post" action="" class="m-basket">
+                  <div class="m-basket__heading">
+                      <h1>Your Basket</h1>
+                  </div>
+                  <div class="m-basket__subheading">
+                      <p>
+                          Items you have added to your basket are shown below. <br />
+                          Adjust the quantities or remove items before continuing your purchase.
+                      </p>
+                  </div>
+                  <table class="m-basket__products">
+                      <tr class="row m-basket__products__row m-basket__products__row--heading">
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Cost</th>
+                      </tr>
+                      <tr class="row m-basket__products__row">
+                          <td>Cotton T-Shirt, Medium</td>
+                          <td class="m-basket__price" data-value="1.99">£1.99</td>
+                          <td class="m-basket__quantity">
+                              <input type="text" name="product-1-qty" id="product-1-qty" value="1">
+                          </td>
+                          <td class="m-basket__cost" data-value="1.99">£1.99</td>
+                      </tr>
+                      <tr class="row m-basket__products__row">
+                          <td>Baseball Cap, One Size</td>
+                          <td class="m-basket__price" data-value="2.99">£2.99</td>
+                          <td class="m-basket__quantity">
+                              <input type="text" name="product-2-qty" id="product-2-qty" value="2">
+                          </td>
+                          <td class="m-basket__cost" data-value="5.98">£5.98</td>
+                      </tr>
+                      <tr class="row m-basket__products__row">
+                          <td>Swim Shorts, Medium</td>
+                          <td class="m-basket__price" data-value="3.99">£3.99</td>
+                          <td class="m-basket__quantity">
+                              <input type="text" name="product-3-qty" id="product-3-qty" value="1">
+                          </td>
+                          <td class="m-basket__cost" data-value="3.99">£3.99</td>
+                      </tr>
+                      <tr class="row m-basket__products__row m-basket__products__row--sub-total">
+                          <td>Subtotal</td>
+                          <td></td>
+                          <td></td>
+                          <td class="m-basket__subtotal" data-value="0.0">£11.96</td>
+                      </tr>
+                      <tr class="row m-basket__products__row m-basket__products__row--vat">
+                          <td>VAT @ 20%</td>
+                          <td></td>
+                          <td></td>
+                          <td class="m-basket__vat" data-value="2.39">£2.39</td>
+                      </tr>
+                      <tr class="row m-basket__products__row m-basket__products__row--total">
+                          <td><strong>Total Cost</strong></td>
+                          <td></td>
+                          <td></td>
+                          <td class="m-basket__total u-bold" data-value="14.35">£14.35</td>
+                      </tr>
+                  </table>
+                  <button class="m-button u-float-right m-button--buy-now">
+                      Buy Now
+                  </button>
+              </form>
+          </div>
+      </div>
+      <footer class="m-footer">
+          <div class="container m-footer__text"><span class="m-footer__copyright">© 2019 REVONIC Ltd.</span> Registered in DUBAI</div>
+      </footer>
+   </body>
+</html>
