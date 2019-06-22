@@ -4,7 +4,7 @@
 
 import { Calculate } from '../modules/calculate';
 
-module.exports.Quantity = class Quantity {
+export class Quantity {
 
      constructor(opts) {
 
@@ -36,22 +36,23 @@ module.exports.Quantity = class Quantity {
              if ($button.text() == "+") {
                newVal = parseFloat(oldValue) + 1;
              } else {
-             if (oldValue > 0) {
-               newVal = parseFloat(oldValue) - 1;
-             } else {
-               newVal = 0;
-             }
+               if (oldValue > 0) {
+                 newVal = parseFloat(oldValue) - 1;
+               } else {
+                 newVal = 0;
+               }
              }
 
              $button.parents('.m-basket__quantity').find("input").val(newVal);
 
-             Calculate.calculateCost(this);
-             Calculate.calculateSubTotal();
-             Calculate.calculateVAT();
-             Calculate.calculateTotal();
+             this.newCalculate = new Calculate();
+             this.newCalculate.calculateCost(this);
+             this.newCalculate.calculateSubTotal();
+             this.newCalculate.calculateVAT();
+             this.newCalculate.calculateTotal();
 
          });
 
      }
 
- }
+ };

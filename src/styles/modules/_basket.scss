@@ -64,6 +64,10 @@
 						td:nth-child(2),
 						td:nth-child(4) {
 								text-align: right;
+
+								@media (max-width: $screen-sm) {
+										padding: 0;
+								}
 						}
 
 						&:nth-child(odd) {
@@ -103,6 +107,24 @@
 
 						}
 
+						&--product {
+
+								th:nth-child(4),
+								th:nth-child(2),
+								th:nth-child(4),
+								td:nth-child(2) {
+										@media (max-width: $screen-sm) {
+												padding: 0;
+										}
+								}
+								td:nth-child(4) {
+										@media (max-width: $screen-sm) {
+												padding: 0 10px 0 0;
+										}
+								}
+
+						}
+
 						&:after {
 								content: '';
 								position: absolute;
@@ -134,10 +156,20 @@
 						font-size: 16px;
 						text-align: right;
 						border: 1px solid $color-grey-medium;
+
+						@media (max-width: $screen-md) {
+								max-width: 70%;
+						}
 				}
 
 				&__btns {
 						float: right;
+
+						@media (max-width: $screen-md) {
+								display: inline;
+								position: relative;
+								width: 30%;
+						}
 				}
 
 				.qty-button {
@@ -153,12 +185,20 @@
 								background: $color-grey-dark;
 						}
 
+						@media (max-width: $screen-md) {
+								padding: 0;
+						}
+
 				}
 
 		}
 
 		&__cost {
 				width: 90px;
+
+				@media (max-width: $screen-md) {
+						width: 60px;
+				}
 		}
 
 }

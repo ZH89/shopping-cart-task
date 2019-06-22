@@ -4,7 +4,7 @@
 
 import { Calculate } from '../modules/calculate';
 
-module.exports.RemoveButton = class RemoveButton {
+export class RemoveButton {
 
      constructor(opts) {
 
@@ -25,13 +25,13 @@ module.exports.RemoveButton = class RemoveButton {
 
                  if (e.offsetX > item.offsetWidth) {
                    item.style.display = "none";
+                   $(item).find('.m-basket__cost').attr('data-value', '0.0');
+                   $(item).find('.m-basket__quantity input').val(0);
+                   this.newCalculate = new Calculate();
+                   this.newCalculate.calculateSubTotal();
+                   this.newCalculate.calculateVAT();
+                   this.newCalculate.calculateTotal();
                  }
-
-                 $(item).find('.m-basket__cost').attr('data-value', '0.0');
-
-                 Calculate.calculateSubTotal();
-                 Calculate.calculateVAT();
-                 Calculate.calculateTotal();
 
              });
          });
@@ -39,4 +39,4 @@ module.exports.RemoveButton = class RemoveButton {
 
      }
 
- }
+ };

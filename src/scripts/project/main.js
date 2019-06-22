@@ -7,9 +7,7 @@ import { BuyNowButton } from './modules/buy-now-button';
 import { Quantity } from './modules/quantity';
 import { Calculate } from './modules/calculate';
 
-import {} from './modules/';
-
-module.exports.Main = class Main {
+export class Main {
 
     constructor() {
 
@@ -27,4 +25,4 @@ module.exports.Main = class Main {
 
     }
 
-}
+};

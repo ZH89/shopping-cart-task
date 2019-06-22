@@ -2,13 +2,12 @@
 
 
 body {
-	font-family: $font-body;
-	font-size: 14px;
+		font-family: $font-body;
+		font-size: 14px;
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-
     color: $color-black;
 		font-family: $font-body;
 		font-weight: 700;
@@ -51,6 +50,11 @@ th, td {
 
 i {
     font-style: normal;
+}
+
+input {
+		color: $color-black;
+		font-family: $font-body;
 }
 
 a {
